@@ -25,7 +25,6 @@ h2 {
     height: 400px;
     width: 650px;
     display: flex;
-    /*border: 1px solid #000;*/
 }
 
 .cols {
@@ -91,4 +90,38 @@ h2 {
 
 .btn:active {
     transform: scale(.9);
+}
+
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+    /*Put your CSS here for 200px to 767px width devices (cover all width between 200px to 767px */
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .container {
+        display: flex;
+        flex-flow: column;
+        width: auto;
+        /*height: auto;*/
+    }
+    .cols {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 20px 45px;
+        height: 325px;
+    }
+    .col1 {
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 0;
+    }
+    .col3 {
+        border-bottom-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 0;
+    }
 }
