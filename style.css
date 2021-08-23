@@ -88,3 +88,7 @@ h2 {
     border: 1px solid #fff;
     color: #fff;
 }
+
+.btn:active {
+    transform: scale(.9);
+}
