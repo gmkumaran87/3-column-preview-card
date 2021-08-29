@@ -101,6 +101,7 @@ h2 {
         width: 100vw;
         padding: 2rem;
         overflow: auto;
+        height: 100%;
     }
     .container {
         display: flex;
